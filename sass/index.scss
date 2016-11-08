@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* 360为效果图分辨率 */
+
+$pageWdith:360/10;
+
+/* 效果图应对那种高清屏设计 */
+
+$devicePixelRatio:3;
+
+/* 效果px转换为适应rem */
+
+@function rem($px) {
+    @return $px/$pageWdith/$devicePixelRatio*1rem;
+}
+
+/* 手机高清屏获取不同像素图片 */
+
+@mixin backgroundSet($picName, $picType:jpg) {
+    background-image: url(../Images/1x/#{$picName}.#{$picType});
+    background-image: -webkit-image-set(url(../Images/1x/#{$picName}.#{$picType}) 1x, url(../Images/2x/#{$picName}.#{$picType}) 2x, url(../Images/3x/#{$picName}.#{$picType}) 3x, url(../Images/3x/#{$picName}.#{$picType}) 4x);
+    background-image: image-set(url(../Images/1x/#{$picName}.#{$picType}) 1x, url(../Images/1x/#{$picName}.#{$picType}) 2x, url(../Images/3x/#{$picName}.#{$picType}) 3x, url(../Images/3x/#{$picName}.#{$picType}) 4x);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+html[data-dpr="1"] body {
+    font-size: 14px;
+}
+
+html[data-dpr="2"] body {
+    font-size: 14px;
+}
+
+html[data-dpr="3"] body {
+    font-size: 14px;
+}
+
+html[data-dpr="4"] body {
+    font-size: 14px;
+}
+
+html[data-dpr="5"] body {
+    font-size: 14px;
+}
+
+.wrap {
+    background-color: #399a98;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    overflow: hidden;
+}
+
+.life_num {
+    background-color: rgba(62, 84, 108, 0.65);
+    h3 {
+        line-height: rem(100);
+        font-size: rem(48);
+        padding-left: rem(64);
+        border-bottom: solid 1px #8cadb5;
+    }
+    ul {
+        .icon_03 {
+            .icon {
+                i {
+                    width: rem(100);
+                    height: rem(100);
+                    margin: rem(16) auto rem(15);
+                }
+                p {
+                    line-height: rem(48);
+                }
+            }
+        }
+        li {
+            display: flex;
+            height: rem(246);
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            border-right: solid 1px #8cadb5;
+            border-bottom: solid 1px #8cadb5;
+            .icon {
+                width: rem(230);
+                text-align: center;
+                i {
+                    width: rem(120);
+                    height: rem(120);
+                    display: block;
+                    margin: rem(30) auto rem(15);
+                }
+                .icon_url_01 {
+                    @include backgroundSet(life_01, png);
+                }
+                .icon_url_02 {
+                    @include backgroundSet(life_02, png);
+                }
+                .icon_url_03 {
+                    @include backgroundSet(life_03, png);
+                }
+                .icon_url_04 {
+                    @include backgroundSet(life_04, png);
+                }
+                .icon_url_05 {
+                    @include backgroundSet(life_05, png);
+                }
+                .icon_url_06 {
+                    @include backgroundSet(life_06, png);
+                }
+            }
+            .life_txt {
+                width: rem(300);
+                h5 {
+                    color: #19e5e3;
+                    font-size: rem(42);
+                    line-height: rem(70);
+                    padding-top: rem(20);
+                }
+                .nowp {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+

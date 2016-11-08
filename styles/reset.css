@@ -1,0 +1,35 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, table, tbody, tfoot, thead, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+table { border-spacing:0; border-collapse:collapse; }
+fieldset, img { border:0; vertical-align:top; }
+address, caption, cite, code, dfn, em, i,b,strong, th, var { font-weight:normal; font-style:normal; }
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+abbr, acronym { border:0; }
+a { color:#595959; text-decoration:none; cursor:pointer; }
+/* wp */
+.wp { overflow: hidden; text-overflow: ellipsis; white-space:nowrap; }
+/* display */
+.hide { display:none; }
+/* textarea */
+textarea{ resize: vertical; overflow-y:auto; outline: 0 none; }
+/* clear */
+.clearfix:before, .clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+.clear { clear:both; overflow:hidden; height:0px; font-size:0; }
+
+.left{ float:left;}
+.right{float:right;}
+
+.ellipsis{ text-overflow:ellipsis; white-space:nowrap; overflow:hidden; }
+/* 去除获取焦点阴影、长按浏览器默认复制粘贴 */
+a{ -webkit-touch-callout: none; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0,0,0,0);outline: 0 none; }
+/*
+* 建议以上做html5公用头部 (后期可能会慢慢完善)
+*/
+ 
+
+body { font: 12px/1.5 'Microsoft YaHei', 'Verdana', 'Geneva', 'sans-serif'; }
+
+
+

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* 360为效果图分辨率 */
+/* 效果图应对那种高清屏设计 */
+/* 效果px转换为适应rem */
+/* 手机高清屏获取不同像素图片 */
+html[data-dpr="1"] body {
+  font-size: 14px; }
+
+html[data-dpr="2"] body {
+  font-size: 14px; }
+
+html[data-dpr="3"] body {
+  font-size: 14px; }
+
+html[data-dpr="4"] body {
+  font-size: 14px; }
+
+html[data-dpr="5"] body {
+  font-size: 14px; }
+
+.wrap {
+    background-color: #399a98;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    overflow: hidden;
+}
+
+.life_num {
+  background-color: rgba(62, 84, 108, 0.65); }
+  .life_num h3 {
+    line-height: 0.92593rem;
+    font-size: 0.44444rem;
+    padding-left: 0.59259rem;
+    border-bottom: solid 1px #8cadb5; }
+  .life_num ul .icon_03 .icon i {
+    width: 0.92593rem;
+    height: 0.92593rem;
+    margin: 0.14815rem auto 0.13889rem; }
+  .life_num ul .icon_03 .icon p {
+    line-height: 0.44444rem; }
+  .life_num ul li {
+    display: flex;
+    height: 2.27778rem;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    border-right: solid 1px #8cadb5;
+    border-bottom: solid 1px #8cadb5; }
+    .life_num ul li .icon {
+      width: 2.12963rem;
+      text-align: center; }
+      .life_num ul li .icon i {
+        width: 1.11111rem;
+        height: 1.11111rem;
+        display: block;
+        margin: 0.27778rem auto 0.13889rem; }
+      .life_num ul li .icon .icon_url_01 {
+        background-image: url(../Images/1x/life_01.png);
+        background-image: -webkit-image-set(url(../Images/1x/life_01.png) 1x, url(../Images/2x/life_01.png) 2x, url(../Images/3x/life_01.png) 3x, url(../Images/3x/life_01.png) 4x);
+        background-image: image-set(url(../Images/1x/life_01.png) 1x, url(../Images/1x/life_01.png) 2x, url(../Images/3x/life_01.png) 3x, url(../Images/3x/life_01.png) 4x);
+        background-repeat: no-repeat;
+        background-size: contain; }
+      .life_num ul li .icon .icon_url_02 {
+        background-image: url(../Images/1x/life_02.png);
+        background-image: -webkit-image-set(url(../Images/1x/life_02.png) 1x, url(../Images/2x/life_02.png) 2x, url(../Images/3x/life_02.png) 3x, url(../Images/3x/life_02.png) 4x);
+        background-image: image-set(url(../Images/1x/life_02.png) 1x, url(../Images/1x/life_02.png) 2x, url(../Images/3x/life_02.png) 3x, url(../Images/3x/life_02.png) 4x);
+        background-repeat: no-repeat;
+        background-size: contain; }
+      .life_num ul li .icon .icon_url_03 {
+        background-image: url(../Images/1x/life_03.png);
+        background-image: -webkit-image-set(url(../Images/1x/life_03.png) 1x, url(../Images/2x/life_03.png) 2x, url(../Images/3x/life_03.png) 3x, url(../Images/3x/life_03.png) 4x);
+        background-image: image-set(url(../Images/1x/life_03.png) 1x, url(../Images/1x/life_03.png) 2x, url(../Images/3x/life_03.png) 3x, url(../Images/3x/life_03.png) 4x);
+        background-repeat: no-repeat;
+        background-size: contain; }
+      .life_num ul li .icon .icon_url_04 {
+        background-image: url(../Images/1x/life_04.png);
+        background-image: -webkit-image-set(url(../Images/1x/life_04.png) 1x, url(../Images/2x/life_04.png) 2x, url(../Images/3x/life_04.png) 3x, url(../Images/3x/life_04.png) 4x);
+        background-image: image-set(url(../Images/1x/life_04.png) 1x, url(../Images/1x/life_04.png) 2x, url(../Images/3x/life_04.png) 3x, url(../Images/3x/life_04.png) 4x);
+        background-repeat: no-repeat;
+        background-size: contain; }
+      .life_num ul li .icon .icon_url_05 {
+        background-image: url(../Images/1x/life_05.png);
+        background-image: -webkit-image-set(url(../Images/1x/life_05.png) 1x, url(../Images/2x/life_05.png) 2x, url(../Images/3x/life_05.png) 3x, url(../Images/3x/life_05.png) 4x);
+        background-image: image-set(url(../Images/1x/life_05.png) 1x, url(../Images/1x/life_05.png) 2x, url(../Images/3x/life_05.png) 3x, url(../Images/3x/life_05.png) 4x);
+        background-repeat: no-repeat;
+        background-size: contain; }
+      .life_num ul li .icon .icon_url_06 {
+        background-image: url(../Images/1x/life_06.png);
+        background-image: -webkit-image-set(url(../Images/1x/life_06.png) 1x, url(../Images/2x/life_06.png) 2x, url(../Images/3x/life_06.png) 3x, url(../Images/3x/life_06.png) 4x);
+        background-image: image-set(url(../Images/1x/life_06.png) 1x, url(../Images/1x/life_06.png) 2x, url(../Images/3x/life_06.png) 3x, url(../Images/3x/life_06.png) 4x);
+        background-repeat: no-repeat;
+        background-size: contain; }
+    .life_num ul li .life_txt {
+      width: 2.77778rem; }
+      .life_num ul li .life_txt h5 {
+        color: #19e5e3;
+        font-size: 0.38889rem;
+        line-height: 0.64815rem;
+        padding-top: 0.18519rem; }
+      .life_num ul li .life_txt .nowp {
+        white-space: nowrap; }
+
+
